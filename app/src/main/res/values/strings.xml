@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CreateButton</string>
+    <string name="Project_List">List of your created project</string>
+    <string name="Number_Of_Projects">06 projects</string>
+    <string name="Create_New_Project">CREATE A NEW PROJECT</string>
 </resources>

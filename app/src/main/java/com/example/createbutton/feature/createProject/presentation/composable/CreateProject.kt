@@ -3,17 +3,17 @@ package com.example.createbutton.feature.createProject.presentation.composable
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.createbutton.R
 import com.example.createbutton.ui.theme.CreateButtonTheme
 
 class CreateProject : ComponentActivity() {
@@ -31,6 +31,7 @@ class CreateProject : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun CreateButtonPreview()
 {
@@ -42,7 +43,7 @@ fun CreateButtonPreview()
 
             },
             modifier = Modifier
-                .padding(top=60.dp)
+                .padding(top = 60.dp)
                 .height(50.dp)
                 .fillMaxWidth(),
             shape = RoundedCornerShape(4.dp)
@@ -50,7 +51,7 @@ fun CreateButtonPreview()
         ) {
 
             Text(
-                text = "CREATE NEW PROJECT",
+                text = stringResource(R.string.Create_New_Project),
                 color = Color.Black,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.SemiBold,
